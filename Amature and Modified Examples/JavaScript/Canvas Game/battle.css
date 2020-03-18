@@ -1,0 +1,60 @@
+.superDiv{
+	border: solid;
+	position: relative;
+	width: 600px;
+	height: 600px;
+	background-color: gray;
+}
+
+.div1{
+	position: absolute;
+	z-index:1;
+	background-color: orange;
+}
+.playerHtml{
+	background-color: purple;
+	z-index:8;
+	position: absolute;
+}
+.playerHead{
+	position: relative;
+	z-index:9;
+	background-color: red;
+}
+.testObjHtml{
+	background-color: black;
+	z-index:8;
+	position: absolute;
+}
+.testObjHead{
+	position: relative;
+	z-index:9;
+	background-color: blue;
+}
+.testBulletHtml{
+	background-color: black;
+	z-index:8;
+	position: absolute;
+}
+.testBulletHead{
+	position: relative;
+	z-index:9;
+	background-color: blue;
+}
+.playerBulletHtml{
+	background-color: purple;
+	z-index:8;
+	position: absolute;
+}
+.playerBulletHead{
+	position: relative;
+	z-index:9;
+	background-color: red;
+}
+.Score{
+	border: solid;
+	float: right;
+	position: absolute;
+	top: 20px;
+	left: 630px;
+}

@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Image Manipulation</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="canvasStyle.css" />
+	</head>
+	<body>	
+		<canvas id="CanvasID" width="255" height="255"></canvas>
+		<div id="buttonDiv">
+		<table>
+		<tr><td>
+		<button onclick="rndGen()">Random Mono</button>
+		<button onclick="rndRainbow()">Rainbow RNG</button>
+		<button onclick="sinRainbow()">Rainbow Sin</button>
+		<button onclick="averagePixel()">Color average</button>
+		</td></tr>
+		<tr><td>
+		<button onclick="MonoChrome()">Mono Chromatic</button>
+		<button onclick="invertLoop()">Invert</button>
+		<button onclick="invertLooped()">Invert loop</button>
+		</td></tr>
+		<tr><td>
+		<button onclick="deltaColor(0,10)">+red</button>
+		<button onclick="deltaColor(1,10)">+green</button>
+		<button onclick="deltaColor(2,10)">+blue</button>
+		<button onclick="deltaColor(0,-10)">-red</button>
+		<button onclick="deltaColor(1,-10)">-green</button>
+		<button onclick="deltaColor(2,-10)">-blue</button>
+		</td></tr>
+		<tr><td>
+		<button onclick="heatMap(0);heatMap(1);heatMap(2)">Blur all</button>
+		<button onclick="heatMap(0)">Blur 0</button>
+		<button onclick="heatMap(1)">Blur 1</button>
+		<button onclick="heatMap(2)">Blur 2</button>
+		</td></tr>
+		<tr><td>
+		<button onclick="noColors()">Black Lines</button>
+		<button onclick="noLines()">Black Blobs</button>
+		<button onclick="colorBias()">Black</button>
+		<button onclick="stopLOOPS()">STOP ALL</button>
+		</td></tr>
+		<tr><td>
+		<button onclick="gameOfLife(1)">1 Step</button>
+		<button onclick="gameOfLife(10)">10 Step</button>
+		<button onclick="gameOfLife(100)">100 Step</button>
+		</td></tr>
+		</table>
+		</div>
+		<img class="hidSrc" id="srcImg" src=""/>
+		<div style="max-width:1277px;" id="imgTxtMenu">
+				<form id="form0" class="form0" action = ">
+  		 <form action = ">
+			<fieldset> 
+			 	<!--<label>Names</label>
+			  	<input id="dataIn" type="text" value="dataIn"/><br/>
+			  	<input onclick="textToImage()" type="button" value="Submit Data"/>
+			  	<input onclick="imageToText()" type="button" value="Output Data"/><br/> -->
+			  	<label>Dimentions</label><br/>
+			  	<input id="canvasWidthIn" type="text" value="255"/><br/>
+			  	<input id="canvasHeightIn" type="text" value="255"/><br/>
+			  	<input onclick="newDimentions()" type="button" value="Submit Data"/><br/>
+			  	<label>Img upload</label><br/>
+				</fieldset>
+			</form>
+		<!--<p id="output10">output10</p>-->
+		</div>
+			<p id="fieldset12">
+				<!--<button onclick="drawImage()">draw image</button>-->
+			</p>
+		<script  src="CanvasPlus.js"></script>
+	</body>
+</html>

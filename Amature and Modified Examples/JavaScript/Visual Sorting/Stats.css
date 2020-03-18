@@ -1,0 +1,28 @@
+.dataBar{
+	white-space: nowrap; 
+	overflow: visible;
+	position: absolute;
+}
+.dataTable{
+	border: solid;
+	border-color:blue;
+	border-width: 1px;
+}
+.userInput{
+	position: absolute;
+	top: 10px;
+	left: 630px;
+}
+.form0{
+	position: absolute;
+	top: 10px;
+	left: 780px;
+}
+td{
+	border: solid;
+	border-color:purple;
+	border-width: 1px;
+}
+body{
+	background-color: lightgray;
+}

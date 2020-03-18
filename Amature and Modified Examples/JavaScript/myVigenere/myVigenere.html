@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>UniCode V5</title>
+		<meta charset="utf-8">
+	</head>
+	<body style="background-color:gray">	
+	<form style="background-color:lightgray">
+		<input id="inputMsg" type="text" value="Your Message Here"/>
+		<label for="inputMsg">Message</label><br/>
+		<input id="inputPass" type ="text" value="Your Password Here" />
+		<label for="inputPass">Encryption Key</label><br/>
+		<input onclick="normalEncryption(1)" type="button" value="Encrypt" />
+		<input onclick="normalEncryption(-1)" type="button" value="Decrypt"/>
+		<label>ASCII</label><br/>
+		<input onclick="uniEncrypt(1)" type="button" value="Encrypt(Uni)" />
+		<input onclick="uniEncrypt(-1)" type="button" value="Decrypt(Uni)"/>
+		<label>Unicode</label><br/>
+		<input type="text" id="inputBlock" value="0" />
+		<input type="button" onclick="setUniBlocks()" value="Set Block" />
+		<label>Blocks:0 - 7</label>
+		<!--`1234567890-=qwertyuiop[]\asdfghjkl;'zxcvbnm,./~!@#$%^&*()_+QWERTYUIOP{}|ASDFGHJKL:"ZXCVBNM<>?-->
+	</form>
+	<pre style="word-wrap:break-word;background-color:black;color:white" id=outputMsg>Cypher Text</pre>
+	<script src="myVigenere.js"></script>
+	</body>
+</html>
+

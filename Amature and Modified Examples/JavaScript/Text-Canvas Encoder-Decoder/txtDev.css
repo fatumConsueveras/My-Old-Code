@@ -1,0 +1,88 @@
+.Hborder{
+	background-color:#FF66CC;
+	position: absolute;
+	align-content:center;
+	top: 0%;
+	left: 5%;
+	width: 90%;
+	height: 5%;
+}
+#subBar{
+	position: absolute;
+	top: 95%;
+}
+.Lborder{
+	background-color:orange;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 20%;
+	height: 100%;
+}
+#rightBar{
+	position: absolute;
+	left: 80%;
+}
+#leftBar{
+	overflow-x: auto;
+	position: absolute;
+	height: 100%;
+}
+.topTable{
+	position: absolute;
+	left: 38%;
+}
+.topData{
+	background-color: pink;
+	border:solid black 1px;
+}
+.leftTable{
+	border:solid black 1px;
+	position: absolute;
+	top: 38%;
+}
+.leftData{
+	background-color:#CCCC00;
+	word-wrap:break-word;
+	border:solid black 1px;
+}
+.centralPrt{
+	word-wrap:break-word;
+	position: absolute;
+	left: 20%;
+	top: 5%;
+	width: 60%;
+	height: 90%;
+	background-color: pink;
+	z-index: -1;
+}
+#rightTable{
+	border:solid black 1px;
+	position: absolute;
+	left: 20%;
+	top:10%;
+}
+td button{
+	background-color: #CCCC00;
+	border:solid black 1px;
+	text-align: center;
+}
+#fieldBox{
+	background-color: #CCCC00;
+	position: absolute;
+	border:solid black 1px;
+	top:50%;
+}
+#inputBox{
+	width: 80%;
+}
+fieldset input{
+	border:solid black 1px;
+	margin: 1px;
+}
+#numberPad{
+	background-color: #CCCC00;
+	border:solid black 1px;
+	text-align: center;
+	width: 26px;
+}

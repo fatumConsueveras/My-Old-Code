@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"> 
+	<title>stats</title>
+	<link rel="stylesheet" type="text/css" href="Stats.css" />
+</head>
+<body id="bodyTag">
+	<div id="superDiv" class="superDiv">
+		<table id="dataTable" class="dataTable"><tr id="TableHead"><td>Name</td><td>Value A</td><td>Value B</td><td>Value C</td><td>	Place</td></tr>
+		</table>
+	<form id="form0" class="form0" action = ">
+  		 <form action = ">
+			<fieldset> 
+			 <label>Names</label>
+			  <input id="newValName" type = "text" value="exName1,exName2,ExName3"/><br/>
+			 <label>Value A</label>
+			  <input id="newValA" type = "text" value="1,4,7"/><br/>
+			 <label>Value B</label>
+			  <input id="newValB" type = "text" value="8,2,5"/><br/>
+			 <label>Value C</label>
+			  <input id="newValC" type = "text" value="6,9,3"/><br/>
+			  <input onclick="rawData.newData()" type="button" value="New Values"/>
+			</fieldset>
+		</form>
+		<table class="userInput">
+			<tr><td>
+				<button onclick="rawData.InitialOrder()">Initialize</button>
+			</td></tr>
+			<tr><td>
+				<button onclick="rawData.reOrderChart(0)">Order Value A</button>
+			</td></tr>
+			<tr><td>
+				<button onclick="rawData.reOrderChart(1)">Order Value B</button>
+			</td></tr>
+			<tr><td>
+				<button onclick="rawData.reOrderChart(2)">Order Value C</button>
+			</td></tr>
+			<tr><td>
+				<button onclick="rawData.rndGen()">Random</button>
+			</td></tr>
+		</table>
+	</div>
+	<script src="Stats.js"></script>
+	<script src="Stats+.js"></script>
+</body>
+</html>
